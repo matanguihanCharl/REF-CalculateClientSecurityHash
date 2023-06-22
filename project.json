@@ -83,6 +83,13 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a79e4ecb-4023-4b27-8f2e-56e85c5d280e",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ACME_OpenTestCase.xaml"
       }
     ],
     "modernBehavior": true
