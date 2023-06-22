@@ -1,6 +1,6 @@
 {
-  "name": "REF_Practice",
-  "description": "Robotic Enterprise Framework",
+  "name": "REF_CalculateClientSecurityHash",
+  "description": "A bot which gets the Work Items from ACME website then hash the value using SHA1 generator webpage.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.2]",
