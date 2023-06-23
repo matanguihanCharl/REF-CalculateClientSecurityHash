@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1102,1297</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1102,1976</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ACME_Open_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -113,7 +113,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ACME_Open" sap:VirtualizedContainerService.HintSize="546,1232" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ACME_Open" sap:VirtualizedContainerService.HintSize="568,1911" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="LoginEmail" />
       <Variable x:TypeArguments="ss:SecureString" Name="LoginPassword" />
@@ -123,8 +123,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Open ACME Website" sap:VirtualizedContainerService.HintSize="484,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Opening Acme Website...&quot;]" />
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="ACME_LoginCredential" CacheStrategy="None" DisplayName="Get ACME Credential in Orchestrator" FolderPath="REF_ACME" sap:VirtualizedContainerService.HintSize="484,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[LoginPassword]" Username="[LoginEmail]">
+    <ui:LogMessage DisplayName="Log Message Open ACME Website" sap:VirtualizedContainerService.HintSize="506,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Opening Acme Website...&quot;]" />
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="ACME_LoginCredential" CacheStrategy="None" DisplayName="Get ACME Credential in Orchestrator" FolderPath="REF_ACME" sap:VirtualizedContainerService.HintSize="506,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[LoginPassword]" Username="[LoginEmail]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -132,13 +132,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="484,757" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c7b96cbb-6fad-44b9-bce8-9ee3d039d577" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="506,1436" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c7b96cbb-6fad-44b9-bce8-9ee3d039d577" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Log-in Sequence" sap:VirtualizedContainerService.HintSize="450,540" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Log-in Sequence" sap:VirtualizedContainerService.HintSize="472,1219" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="FoundElement" />
             </Sequence.Variables>
@@ -147,7 +147,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="visibleInnerText" DisplayName="Get Attribute 'H1'" sap:VirtualizedContainerService.HintSize="388,203" sap2010:WorkflowViewState.IdRef="GetAttribute_3">
+            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="visibleInnerText" DisplayName="Get Attribute 'H1'" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="GetAttribute_3">
               <ui:GetAttribute.Result>
                 <OutArgument x:TypeArguments="x:String">[FoundElement]</OutArgument>
               </ui:GetAttribute.Result>
@@ -161,8 +161,14 @@
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:GetAttribute.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:GetAttribute>
-            <If Condition="[FoundElement = &quot;Dashboard&quot;]" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[FoundElement = &quot;Dashboard&quot;]" sap:VirtualizedContainerService.HintSize="410,1012" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -186,7 +192,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Loggin in account...&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Logging in account...&quot;]" />
                   <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Log in account&quot;]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
