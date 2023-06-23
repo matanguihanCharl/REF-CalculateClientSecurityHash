@@ -147,7 +147,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="visibleInnerText" DisplayName="Get Attribute 'H1'" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="GetAttribute_3">
+            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="visibleInnerText" DisplayName="Get Attribute 'Dashboard'" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="GetAttribute_3">
               <ui:GetAttribute.Result>
                 <OutArgument x:TypeArguments="x:String">[FoundElement]</OutArgument>
               </ui:GetAttribute.Result>
@@ -168,7 +168,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetAttribute>
-            <If Condition="[FoundElement = &quot;Dashboard&quot;]" sap:VirtualizedContainerService.HintSize="410,1012" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[FoundElement = &quot;Dashboard&quot;]" DisplayName="If - Dashboard Element is found" sap:VirtualizedContainerService.HintSize="410,1012" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
