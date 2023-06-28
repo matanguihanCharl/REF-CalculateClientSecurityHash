@@ -1,5 +1,6 @@
 {
   "name": "REF_CalculateClientSecurityHash",
+  "projectId": "5afd688b-61b5-44ca-a5e4-6f5aee993865",
   "description": "A bot which gets the Work Items from ACME website then hash the value using SHA1 generator webpage.",
   "main": "Main.xaml",
   "dependencies": {
