@@ -86,7 +86,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Navigating to Work Items...&quot;]" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="530,465" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="aa8a4df50e9f6f8adc34ed0d6f5a016c" Selector="&lt;html app='chrome.exe' title='ACME System 1 *' url='https://acme-test.uipath.com/home' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="530,465" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="aa8a4df50e9f6f8adc34ed0d6f5a016c" Selector="&lt;html app='chrome.exe' title='ACME System 1 *' omit:url='https://acme-test.uipath.com/home' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
